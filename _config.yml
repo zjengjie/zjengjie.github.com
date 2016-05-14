@@ -19,3 +19,4 @@ github_username:  zjengjie
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
