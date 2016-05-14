@@ -1,22 +1,25 @@
-# Welcome to Jekyll!
+# Permalinks
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
 
-# Site settings
-title: HELLO WORLD
-email: zjengjie@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: zjengjie
-github_username:  zjengjie
+# Setup
+title:               Hello World
+tagline:             'code life'
+description:         ''
+url:                 http://zjengjie.github.io
+baseurl:             ''
+paginate:            1
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
+# About/contact
+author:
+  name:              Zeng Jie
+  url:               https://twitter.com/zjengjie
+  email:             zjengjie@gmail.com
+
+gems: [jekyll-paginate]
+
+# Custom vars
+version:             1.0.0
+
