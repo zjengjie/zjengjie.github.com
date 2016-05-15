@@ -10,7 +10,9 @@ tagline:             'code life'
 description:         ''
 url:                 http://zjengjie.github.io
 baseurl:             ''
-paginate:            1
+paginate:            5
+excerpt_separator:   '<!-- more -->'
+highlighter:         pygments
 
 # About/contact
 author:
