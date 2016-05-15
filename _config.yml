@@ -9,6 +9,7 @@ url:                 http://nishisbma.com
 baseurl:             ''
 paginate:            5
 excerpt_separator:   '<!-- more -->'
+analytics_id:        'UA-77732769-1'
 
 # Assets
 #
