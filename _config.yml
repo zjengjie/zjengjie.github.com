@@ -1,8 +1,5 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-# relative_permalinks: true
 
 # Setup
 title:               Hello World
@@ -12,16 +9,24 @@ url:                 http://zjengjie.github.io
 baseurl:             ''
 paginate:            5
 excerpt_separator:   '<!-- more -->'
-highlighter:         pygments
 
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+  
 # About/contact
 author:
   name:              Zeng Jie
   url:               https://twitter.com/zjengjie
   email:             zjengjie@gmail.com
 
-gems: [jekyll-paginate]
-
 # Custom vars
 version:             1.0.0
 
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
