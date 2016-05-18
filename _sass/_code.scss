@@ -29,31 +29,73 @@ pre code {
 }
 
 // Pygments via Jekyll
-.highlight {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  background-color: #f9f9f9;
-  border-radius: .25rem;
+// .highlight {
+//   padding: 1rem;
+//   margin-bottom: 1rem;
+//   font-size: .8rem;
+//   line-height: 1.4;
+//   background-color: #f9f9f9;
+//   border-radius: .25rem;
 
-  pre {
-    margin-bottom: 0;
-    overflow-x: auto;
+//   pre {
+//     margin-bottom: 0;
+//     overflow-x: auto;
+//   }
+
+//   .lineno {
+//     display: inline-block; // Ensures the null space also isn't selectable
+//     padding-right: .75rem;
+//     padding-left: .25rem;
+//     color: #999;
+//     // Make sure numbers aren't selectable
+//     -webkit-user-select: none;
+//        -moz-user-select: none;
+//             user-select: none;
+//   }
+// }
+
+// so that the line numbers are not selectable
+@mixin unselectable() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// having a lineno-container made it easier to style line number 
+// code blocks without impacting normal code blocks
+.lineno-container > figure > pre {
+  padding: 0px;
+}
+
+.highlight {
+  pre.lineno {
+    border: none;
+    @include opacity(0.6);  
   }
 
   .lineno {
-    display: inline-block; // Ensures the null space also isn't selectable
-    padding-right: .75rem;
-    padding-left: .25rem;
-    color: #999;
-    // Make sure numbers aren't selectable
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
+    @include unselectable();
+  }
+
+  .gutter {
+    border-right: 1px solid #ccc;
+  }
+
+  pre {
+    pre {
+      border: none;
+      margin-bottom: 0px;
+    }
   }
 }
-
 
 // Gist via GitHub Pages
 // .gist .gist-file {
