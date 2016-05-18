@@ -33,7 +33,7 @@ figure {
   margin: 0;
 }
 
-.highlighter-rouge {
+div.highlighter-rouge {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: .8rem;
@@ -43,7 +43,7 @@ figure {
 }
 
 // rouge via Jekyll
-.highlight div {
+.highlight {
   font-size: .8rem;
   line-height: 1.4;
   background-color: #f9f9f9;
