@@ -52,6 +52,20 @@ pre code {
        -moz-user-select: none;
             user-select: none;
   }
+  
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+  
+  table {
+    border: none;
+  }
+  
+  td,
+  th {
+    border: none;
+  }
 }
 
 
