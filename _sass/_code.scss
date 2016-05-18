@@ -41,6 +41,7 @@ figure {
   line-height: 1.4;
   background-color: #f9f9f9;
   border-radius: .25rem;
+  overflow-x: auto;
 
   pre {
     margin-bottom: 0;
@@ -48,7 +49,7 @@ figure {
   }
 
   .lineno {
-    display: inline-block; // Ensures the null space also isn't selectable
+    // display: inline-block; // Ensures the null space also isn't selectable
     padding-right: .75rem;
     padding-left: .25rem;
     color: #999;

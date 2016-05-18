@@ -106,7 +106,7 @@ task :new do
 	@url = STDIN.gets.chomp
 	puts "Input Article Title(for Article)："
 	@name = STDIN.gets.chomp
-	puts "Input Article Categories(工具｜资源｜生活｜技术｜读书 Separated By Spaces)："
+	puts "Input Article Categories(tools｜life｜technique｜reading Separated By Spaces)："
 	@categories = STDIN.gets.chomp
   puts "Input Article Tags(Separated By ,)"
   @tags = STDIN.gets.chomp
