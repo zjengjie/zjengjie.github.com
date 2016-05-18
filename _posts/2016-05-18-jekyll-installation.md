@@ -34,32 +34,13 @@ sudo apt-get install ruby-dev # 安装 Jekyll 时遇到的坑，需要先安装�
 sudo gem install jekyll
 {% endhighlight %}
 
-{% highlight shell linenos %}
-sudo apt-get install ruby
-sudo apt-get install rubygems
-sudo apt-get install ruby-dev 
-sudo gem install jekyll
-{% endhighlight %}
-
 如果你在我之后使用这种方式安装，应该装的是 jekyll 3 或以上版本，和 jekyll 2 有一些不兼容的地方，主要在安装主题的时候会有体现。有的介绍说需要安装 nodejs，jekyll 3 不需要依赖 nodejs，我就没有安装。执行以上命令 Jekyll 环境就已经搭建完成。之后折腾主题的时候还遇到过各种依赖缺失，一般自己 `gem install` 一下就好了。
 
 ## 创建 Jekyll 博客
 安装完 Jekyll 后，执行一下命令就可以新建和运行一个博客：
 
-```
+```shell
 jekyll new myblog
 cd myblog
 jekyll serve
 ```
-
-```java
-public static void main(String[] args) {
-    System.out.println("hello world");    // 我知道这很傻逼，但你又能拿我怎么样。bababababababa
-}
-```
-
-{% highlight java linenos %}
-public static void main(String[] args) {
-    System.out.println("hello world");
-}
-{% endhighlight %}
