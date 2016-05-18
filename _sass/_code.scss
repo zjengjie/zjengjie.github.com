@@ -21,6 +21,11 @@ pre {
   margin-bottom: 1rem;
 }
 
+figure {
+  padding: 1rem;
+  margin: 0;
+}
+
 pre code {
   padding: 0;
   font-size: 100%;
@@ -53,11 +58,6 @@ pre code {
             user-select: none;
   }
   
-  figure {
-    padding: 1rem;
-    margin: 0;
-  }
-  
   table {
     border: none;
   }
@@ -65,8 +65,10 @@ pre code {
   td,
   th {
     border: none;
+    padding: 0 0.25rem;
   }
 }
+
 
 
 // Gist via GitHub Pages
