@@ -5,8 +5,8 @@ permalink:           pretty
 title:               Hello World
 tagline:             'code life'
 description:         'nothing'
-url:                 https://nishisbma.com
-enforce_ssl:         nishisbma.com
+url:                 https://illuke.com
+enforce_ssl:         illuke.com
 baseurl:             ''
 paginate:            5
 excerpt_separator:   '<!-- more -->'
