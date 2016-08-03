@@ -8,6 +8,21 @@ layout: default
   {{ content }}
 </article>
 
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = {{ site.baseurl }}{{ post.url }};
+    this.page.identifier = {{ post.url }};
+};
+(function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//zengjie.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 {% if site.related_posts != empty %}
 <aside class="related">
   <h3>Related posts</h3>
@@ -23,3 +38,4 @@ layout: default
   </ul>
 </aside>
 {% endif %}
+<script id="dsq-count-scr" src="//zengjie.disqus.com/count.js" async></script>
